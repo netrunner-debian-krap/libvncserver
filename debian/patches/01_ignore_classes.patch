@@ -1,0 +1,25 @@
+diff -Nur libvncserver-0.9.3/configure.ac libvncserver-0.9.3.new/configure.ac
+--- libvncserver-0.9.3/configure.ac	2007-11-15 01:26:29.569174000 -0500
++++ libvncserver-0.9.3.new/configure.ac	2007-11-16 01:34:45.345565229 -0500
+@@ -711,8 +711,6 @@
+ 	contrib/Makefile
+ 	examples/Makefile
+ 	vncterm/Makefile
+-	classes/Makefile
+-	classes/ssl/Makefile
+ 	libvncclient/Makefile
+ 	client_examples/Makefile
+ 	test/Makefile
+diff -Nur libvncserver-0.9.3/Makefile.am libvncserver-0.9.3.new/Makefile.am
+--- libvncserver-0.9.3/Makefile.am	2007-11-15 01:26:29.569174000 -0500
++++ libvncserver-0.9.3.new/Makefile.am	2007-11-16 01:34:45.345565229 -0500
+@@ -1,7 +1,7 @@
+ CFLAGS=-g -Wall
+ 
+-SUBDIRS=libvncserver examples contrib libvncclient vncterm classes client_examples test
+-DIST_SUBDIRS=libvncserver examples contrib libvncclient vncterm classes client_examples test
++SUBDIRS=libvncserver examples contrib libvncclient vncterm client_examples test
++DIST_SUBDIRS=libvncserver examples contrib libvncclient vncterm client_examples test
+ 
+ bin_SCRIPTS = libvncserver-config
+ 

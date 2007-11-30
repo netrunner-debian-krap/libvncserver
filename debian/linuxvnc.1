@@ -1,0 +1,37 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH LINUXVNC 1 "March 10, 2004"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+linuxvnc \- export a tty to any VNC client
+.SH SYNOPSIS
+.B linuxvnc [ tty_number [ vnc args ] ]
+.SH DESCRIPTION
+You need root privileges, or at least be in the "tty" group, because             
+it reads /dev/vcsN and writes /dev/ttyN.
+.PP
+It follows the same idea as WinVNC, x11vnc or OSXvnc, i.e. it           
+takes an existing desktop and exports it via RFB (VNC), just that       
+LinuxVNC exports text.
+.PP
+If you want to export another tty, specify it as 'tty_number'.
+You can also pass VNC options to tune what encodings are used for the VNC
+session. You can read x11vnc man page for more information on this.
+.SH SEE ALSO
+.BR x11vnc (1).
+.SH AUTHOR
+This manual page was written by Ludovic Drolez <ldrolez@debian.org>,
+for the Debian project (but may be used by others).

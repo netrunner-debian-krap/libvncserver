@@ -1,0 +1,14 @@
+diff -Nur libvncserver-0.9.3/configure.ac libvncserver-0.9.3.new/configure.ac
+--- libvncserver-0.9.3/configure.ac	2007-11-16 01:35:42.347400528 -0500
++++ libvncserver-0.9.3.new/configure.ac	2007-11-16 01:35:48.347593652 -0500
+@@ -679,8 +679,8 @@
+ AC_CHECK_LIB(cygipc,shmget)
+ AM_CONDITIONAL(CYGIPC, test "$HAVE_CYGIPC" = "true")
+ 
+-# Check if /dev/vcsa1 exists, if so, define LINUX
+-AM_CONDITIONAL(LINUX, test -c /dev/vcsa1)
++# Check if /usr/include/linux exists, if so, define LINUX
++AM_CONDITIONAL(LINUX, test -d /usr/include/linux)
+ 
+ # Check for OS X specific header
+ AC_CHECK_HEADER(ApplicationServices/ApplicationServices.h, HAVE_OSX="true")

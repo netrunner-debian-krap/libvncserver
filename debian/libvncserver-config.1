@@ -1,0 +1,30 @@
+.\" Do whatever you want with this file.
+.\" NO warranty is provided.
+.TH libvncserver-config 1 "13 April 2004" "libvncserver 0.6" "libvncserver-config manual"
+.SH NAME
+libvncserver-config \- Get information about a libvncserver installation
+.SH SYNOPSIS
+.B libvncserver-config [options]
+.SH DESCRIPTION
+.B libvncserver-config
+displays information about a previous libvncserver installation.
+.SH OPTIONS
+.IP "--cflags"
+Set of compiler options (CFLAGS) to use when compiling files that use
+libvncserver.
+.IP "--libs"
+Shows the complete set of libs and other linker options you will need in order
+to link your application with libvncserver.
+.SH "EXAMPLES"
+What linker options do I need when I link with libvncserver?
+
+  libvncserver-config --libs
+
+What compiler options do I need when I compile using libvncserver functions?
+
+  libvncserver-config --cflags
+.SH SEE ALSO
+whatever you're able to see.
+.SH AUTHOR
+This manual page was written by Ludovic Drolez <ldrolez@debian.org>
+for the Debian GNU/Linux system (but may be used by others).
