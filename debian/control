@@ -18,6 +18,7 @@ Description: API to write one's own vnc server
 
 Package: libvncserver0-dbg
 Section: libdevel
+Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends}, libvncserver0 (= ${binary:Version})
 Description: debugging symbols for libvncserver

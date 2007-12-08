@@ -1,3 +1,10 @@
+libvncserver (0.9.3.dfsg.1-2) unstable; urgency=low
+
+  * Update to Standards-Version 3.7.3
+  * Change -dbg priority to extra
+
+ -- Matthew Rosewarne <mrosewarne@inoutbox.com>  Sat, 08 Dec 2007 15:38:14 -0500
+
 libvncserver (0.9.3.dfsg.1-1) unstable; urgency=low
 
   * New upstream release. Closes: #448942
