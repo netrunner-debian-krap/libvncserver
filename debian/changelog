@@ -1,9 +1,10 @@
 libvncserver (0.9.3.dfsg.1-2) unstable; urgency=low
 
-  * Update to Standards-Version 3.7.3
-  * Change -dbg priority to extra
+  * Update to Standards-Version 3.7.3.
+  * Change -dbg priority to extra.
+  * Add Homepage: to control.
 
- -- Matthew Rosewarne <mrosewarne@inoutbox.com>  Sat, 08 Dec 2007 15:38:14 -0500
+ -- Matthew Rosewarne <mrosewarne@inoutbox.com>  Tue, 08 Jan 2008 11:31:08 -0500
 
 libvncserver (0.9.3.dfsg.1-1) unstable; urgency=low
 
