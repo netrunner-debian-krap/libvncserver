@@ -2,7 +2,7 @@ Source: libvncserver
 Section: libs
 Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
-Build-Depends: autoconf, automake, autotools-dev, cdbs, debhelper (>= 5.0.0), patchutils, libtool, linux-libc-dev, libavahi-client-dev, libjpeg62-dev, libssl-dev, libx11-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxinerama-dev, libxrandr-dev, libxtst-dev, xutils-dev, zlib1g-dev
+Build-Depends: autoconf, automake, autotools-dev, cdbs, debhelper (>= 5.0.0), patchutils, libtool, libavahi-client-dev, libjpeg62-dev, libssl-dev, libx11-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxinerama-dev, libxrandr-dev, libxtst-dev, xutils-dev, zlib1g-dev
 Standards-Version: 3.7.2
 
 Package: libvncserver0

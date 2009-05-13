@@ -1,3 +1,10 @@
+libvncserver (0.9.3.dfsg.1-2) unstable; urgency=low
+
+  * QA upload.
+  * Drop useless build-depends on linux-libc-dev.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 13 May 2009 20:11:07 +0200
+
 libvncserver (0.9.3.dfsg.1-1) unstable; urgency=low
 
   * QA upload.
