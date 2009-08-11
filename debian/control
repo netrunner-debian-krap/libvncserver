@@ -1,37 +1,17 @@
 Source: libvncserver
-Section: libs
 Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
-Build-Depends: autoconf, automake, autotools-dev, cdbs, debhelper (>= 5.0.0), patchutils, libtool, libavahi-client-dev, libjpeg62-dev, libssl-dev, libx11-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxinerama-dev, libxrandr-dev, libxtst-dev, xutils-dev, zlib1g-dev
-Standards-Version: 3.7.2
-
-Package: libvncserver0
+Build-Depends: debhelper (>= 7.3), quilt, automake, libtool,
+ libjpeg62-dev, zlib1g-dev
+Standards-Version: 3.8.2
 Section: libs
-Architecture: any
-Depends: ${shlibs:Depends}
-Suggests: libvncserver0-dbg (= ${binary:Version})
-Description: API to write one's own vnc server
- LibVNCServer makes writing a VNC server (or more correctly, a program
- exporting a framebuffer via the Remote Frame Buffer protocol) easy.  It hides
- the programmer from the tedious task of managing clients
- and compression schemata.
-
-Package: libvncserver0-dbg
-Section: libdevel
-Architecture: any
-Depends: ${shlibs:Depends}, libvncserver0 (= ${binary:Version})
-Description: debugging symbols for libvncserver
- LibVNCServer makes writing a VNC server (or more correctly, a program
- exporting a framebuffer via the Remote Frame Buffer protocol) easy.  It hides
- the programmer from the tedious task of managing clients
- and compression schemata.
- .
- This package contains the debugging symbols for libvncserver.
+Homepage: http://libvncserver.sourceforge.net
 
 Package: libvncserver-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, libvncserver0 (= ${binary:Version})
+Depends: ${misc:Depends}, libvncserver0 (= ${binary:Version}),
+ libjpeg62-dev, zlib1g-dev
 Description: API to write one's own vnc server - development files
  LibVNCServer makes writing a VNC server (or more correctly, a program
  exporting a framebuffer via the Remote Frame Buffer protocol) easy.  It hides
@@ -41,6 +21,30 @@ Description: API to write one's own vnc server - development files
  This is the development package which contains headers and static libraries 
  for libvncserver.
 
+Package: libvncserver0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libvncserver0-dbg (= ${binary:Version})
+Description: API to write one's own vnc server
+ LibVNCServer makes writing a VNC server (or more correctly, a program
+ exporting a framebuffer via the Remote Frame Buffer protocol) easy.  It hides
+ the programmer from the tedious task of managing clients
+ and compression schemata.
+
+Package: libvncserver0-dbg
+Priority: extra
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libvncserver0 (= ${binary:Version})
+Description: debugging symbols for libvncserver
+ LibVNCServer makes writing a VNC server (or more correctly, a program
+ exporting a framebuffer via the Remote Frame Buffer protocol) easy.  It hides
+ the programmer from the tedious task of managing clients
+ and compression schemata.
+ .
+ This package contains the debugging symbols for libvncserver.
+
 Package: linuxvnc
 Section: net
 Architecture: linux-any
@@ -49,14 +53,3 @@ Description: VNC server to allow remote access to a tty
  linuxvnc can export your currently running text sessions to any VNC client.
  It can be useful if you want to move to another computer without having to
  log out or to help a distant colleague solve a problem.
-
-Package: x11vnc
-Section: x11
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: VNC server to allow remote access to an existing X session
- x11vnc allows one to view remotely and interact with real X displays (i.e. a
- display corresponding to a physical monitor, keyboard, and mouse) with any
- VNC viewer. It has built-in SSL encryption and authentication, UNIX account
- and password support, server-side scaling, single port HTTPS and VNC, mDNS
- service advertising, and TightVNC and UltraVNC file-transfer.

@@ -1,7 +1,6 @@
-diff -Nur libvncserver-0.9.3/configure.ac libvncserver-0.9.3.new/configure.ac
---- libvncserver-0.9.3/configure.ac	2007-11-16 01:35:42.347400528 -0500
-+++ libvncserver-0.9.3.new/configure.ac	2007-11-16 01:35:48.347593652 -0500
-@@ -679,8 +679,8 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -718,8 +718,8 @@ fi
  AC_CHECK_LIB(cygipc,shmget)
  AM_CONDITIONAL(CYGIPC, test "$HAVE_CYGIPC" = "true")
  

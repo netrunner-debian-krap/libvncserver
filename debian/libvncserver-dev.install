@@ -1,5 +1,6 @@
 usr/bin/libvncserver-config
 usr/include/rfb
-usr/lib/*.a
-usr/lib/*.la
-usr/lib/*.so
+usr/lib/libvncclient.a
+usr/lib/libvncclient.so
+usr/lib/libvncserver.a
+usr/lib/libvncserver.so

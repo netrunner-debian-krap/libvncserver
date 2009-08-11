@@ -1,0 +1,13 @@
+--- a/vncterm/Makefile.am
++++ b/vncterm/Makefile.am
+@@ -8,8 +8,8 @@ LDADD=../libvncserver/libvncserver.la @W
+ INCLUDES=-I.
+ 
+ if LINUX
+-bin_PROGRAMS=LinuxVNC
+-LinuxVNC_SOURCES=LinuxVNC.c $(CONSOLE_SRCS)
++bin_PROGRAMS=linuxvnc
++linuxvnc_SOURCES=LinuxVNC.c $(CONSOLE_SRCS)
+ endif
+ 
+ if ! MINGW

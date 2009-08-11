@@ -1,7 +1,6 @@
-diff -Nur libvncserver-0.9.3/configure.ac libvncserver-0.9.3.new/configure.ac
---- libvncserver-0.9.3/configure.ac	2007-11-15 01:26:29.569174000 -0500
-+++ libvncserver-0.9.3.new/configure.ac	2007-11-16 01:34:45.345565229 -0500
-@@ -711,8 +711,6 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -751,8 +751,6 @@ AC_CONFIG_FILES([Makefile
  	contrib/Makefile
  	examples/Makefile
  	vncterm/Makefile
@@ -10,15 +9,15 @@ diff -Nur libvncserver-0.9.3/configure.ac libvncserver-0.9.3.new/configure.ac
  	libvncclient/Makefile
  	client_examples/Makefile
  	test/Makefile
-diff -Nur libvncserver-0.9.3/Makefile.am libvncserver-0.9.3.new/Makefile.am
---- libvncserver-0.9.3/Makefile.am	2007-11-15 01:26:29.569174000 -0500
-+++ libvncserver-0.9.3.new/Makefile.am	2007-11-16 01:34:45.345565229 -0500
-@@ -1,7 +1,7 @@
- CFLAGS=-g -Wall
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -4,8 +4,8 @@ if WITH_X11VNC
+ X11VNC=x11vnc
+ endif
  
--SUBDIRS=libvncserver examples contrib libvncclient vncterm classes client_examples test
+-SUBDIRS=libvncserver examples contrib libvncclient vncterm classes client_examples test $(X11VNC)
 -DIST_SUBDIRS=libvncserver examples contrib libvncclient vncterm classes client_examples test
-+SUBDIRS=libvncserver examples contrib libvncclient vncterm client_examples test
++SUBDIRS=libvncserver examples contrib libvncclient vncterm client_examples test $(X11VNC)
 +DIST_SUBDIRS=libvncserver examples contrib libvncclient vncterm client_examples test
  
  bin_SCRIPTS = libvncserver-config

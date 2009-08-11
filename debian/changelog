@@ -1,3 +1,29 @@
+libvncserver (0.9.7-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream release (Closes: #529010):
+    - x11vnc is removed upstream from libvncserver sources.
+      Now, it is released separately.
+  * Added patches:
+    - 03_no_x11vnc_subdir.patch
+      Remove x11vnc remaining occurrences from the build system.
+    - 04_rename_linuxvnc.patch
+      Rename LinuxVNC to linuxvnc.
+  * Bumped debian/compat from 5 to 7.
+  * Updated debian/control:
+    - Cleanuped build dependencies.
+    - Switched to quilt patch system.
+    - Added Homepage field.
+    - Added libjpeg62-dev and zlib1g-dev dependencies to libvncserver-dev.
+      (Closes: #515029)
+    - Added priority extra and section debug to libvncserver0-dbg.
+    - Removed x11vnc package.
+  * Added debian/not-installed:
+    - *.la files are not installed anymore in libvncserver-dev.
+  * Switched debian/rules from cdbs to dh usage.
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 07 Aug 2009 15:45:36 +0200
+
 libvncserver (0.9.3.dfsg.1-2) unstable; urgency=low
 
   * QA upload.
@@ -99,4 +125,3 @@ libvncserver (0.6-1) unstable; urgency=low
   * Integrated the last release of x11vnc.
 
  -- Ludovic Drolez <ldrolez@debian.org>  Wed, 10 Mar 2004 23:42:26 +0100
-
