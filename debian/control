@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
 Build-Depends: autoconf, automake, autotools-dev, cdbs, debhelper (>= 5.0.0), patchutils, libtool, linux-libc-dev, libavahi-client-dev, libjpeg62-dev, libssl-dev, libx11-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxinerama-dev, libxrandr-dev, libxtst-dev, xutils-dev, zlib1g-dev
 Standards-Version: 3.7.2
-Homepage: http://libvncserver.sourceforge.net/
 
 Package: libvncserver0
 Section: libs
@@ -19,7 +18,6 @@ Description: API to write one's own vnc server
 
 Package: libvncserver0-dbg
 Section: libdevel
-Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends}, libvncserver0 (= ${binary:Version})
 Description: debugging symbols for libvncserver

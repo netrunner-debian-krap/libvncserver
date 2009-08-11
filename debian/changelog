@@ -1,23 +1,18 @@
-libvncserver (0.9.3.dfsg.1-2) unstable; urgency=low
-
-  * Update to Standards-Version 3.7.3.
-  * Change -dbg priority to extra.
-  * Add Homepage: to control.
-
- -- Matthew Rosewarne <mrosewarne@inoutbox.com>  Tue, 08 Jan 2008 11:31:08 -0500
-
 libvncserver (0.9.3.dfsg.1-1) unstable; urgency=low
 
-  * New upstream release. Closes: #448942
+  * QA upload.
+  * New upstream release. (Closes: #448942)
     - CVS tag X11VNC_REL_0_9_3
   * Switched rules to CDBS.
   * Bumped compat to 5.
-  * Enabled shared libraries. Closes: #373298
+  * Bumped Standards-Version to 3.7.2
+  * Enabled shared libraries. (Closes: #373298)
   * Dropped vncommand, since it isn't installed by make install.
     - All hate-mail should be sent to debian@pusling.com
-  * Removed the classes/ dir, there are no sources for the jar files
-    - Appended .dfsg.1 to source version
-    - Added patch 01_ignore_classes to allow building without classes/ dir
+  * Added debug package.
+  * Removed the classes/ dir, there are no sources for the jar files.
+    - Appended .dfsg.1 to source version.
+    - Added patch 01_ignore_classes to allow building without classes/ dir.
   * Added patch 02_linux_test to look for /usr/include/linux instead of /dev/vcsa
 
  -- Matthew Rosewarne <mrosewarne@inoutbox.com>  Mon, 05 Nov 2007 03:22:20 -0500

@@ -1,5 +1,7 @@
 This package was debianized by Matthew Rosewarne <mrosewarne@inoutbox.com> on
 Sun, 04 Nov 2007 19:28:19 -0500.
+Previous packaging made by Ludovic Drolez <ldrolez@debian.org> on
+Wed, 10 Mar 2004 23:42:26 +0100.
 
 It was downloaded from http://libvncserver.sourceforge.net/
 
@@ -14,6 +16,7 @@ Upstream Authors:
 Copyright: 
 
     LibVNCServer (C) 2001 Johannes E. Schindelin
+    X11vnc Copyright (c) 2002-2003 Karl J. Runge <runge@karlrunge.com>
 
 License:
 
@@ -32,8 +35,8 @@ License:
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 
 On Debian systems, the complete text of the GNU General
-Public License can be found in `/usr/share/common-licenses/GPL'.
+Public License version 2 can be found in `/usr/share/common-licenses/GPL-2'.
 
-The Debian packaging is (C) 2007, Matthew Rosewarne <mrosewarne@inoutbox.com> and
-is licensed under the GPL, see above.
+The Debian packaging is (C) 2007, Matthew Rosewarne <mrosewarne@inoutbox.com> 
+and is licensed under the GPL, see above.
 
