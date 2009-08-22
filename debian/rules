@@ -7,7 +7,7 @@ ifneq ($(DEB_HOST_ARCH_OS), linux)
 endif
 
 %:
-	dh $(EXTRA_DH_ARG) --with quilt --dbg-package=libvncserver0-dbg $@
+	dh --with quilt --dbg-package=libvncserver0-dbg $(EXTRA_DH_ARG) $@
 
 override_dh_auto_configure:
 	aclocal
@@ -25,4 +25,4 @@ override_dh_clean:
 	find . -name Makefile -delete
 	find . -name Makefile.in -delete
 
-.PHONY: dh_auto_test
+.PHONY: override_dh_auto_test

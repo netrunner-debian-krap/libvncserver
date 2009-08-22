@@ -1,9 +1,9 @@
 Source: libvncserver
 Priority: optional
-Maintainer: Debian QA Group <packages@qa.debian.org>
+Maintainer: Fathi Boudra <fabo@debian.org>
 Build-Depends: debhelper (>= 7.3), quilt, automake, libtool,
  libjpeg62-dev, zlib1g-dev
-Standards-Version: 3.8.2
+Standards-Version: 3.8.3
 Section: libs
 Homepage: http://libvncserver.sourceforge.net
 
