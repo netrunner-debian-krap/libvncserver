@@ -1,7 +1,13 @@
 #!/usr/bin/make -f
 
+DEB_HOST_ARCH_OS ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+
+ifneq ($(DEB_HOST_ARCH_OS), linux)
+  EXTRA_DH_ARG=-Nlinuxvnc
+endif
+
 %:
-	dh --with quilt --dbg-package=libvncserver0-dbg $@
+	dh $(EXTRA_DH_ARG) --with quilt --dbg-package=libvncserver0-dbg $@
 
 override_dh_auto_configure:
 	aclocal

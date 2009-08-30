@@ -1,3 +1,11 @@
+libvncserver (0.9.7-2) unstable; urgency=low
+
+  * QA upload.
+  * Don't build linuxvnc on non-linux architectures (Closes: #542592).
+  * Add a debian/README.source.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 30 Aug 2009 17:15:14 +0200
+
 libvncserver (0.9.7-1) unstable; urgency=low
 
   * QA upload.
