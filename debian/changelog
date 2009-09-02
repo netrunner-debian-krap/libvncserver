@@ -2,12 +2,9 @@ libvncserver (0.9.7-3) UNRELEASED; urgency=low
 
   * Update debian/control:
     - Set myself as Maintainer. Take over the package maintenance.
-    - Bump Standards-Version to 3.8.3 (add debian/README.source file).
-  * Update debian/rules:
-    - Fix FTBFS on GNU/kFreeBSD: pass --same-arch to debhelper.
-      (Closes: #542592)
+    - Bump Standards-Version to 3.8.3 (no changes needed).
 
- -- Fathi Boudra <fabo@debian.org>  Sat, 22 Aug 2009 10:36:30 +0200
+ -- Fathi Boudra <fabo@debian.org>  Wed, 02 Sep 2009 10:36:30 +0200
 
 libvncserver (0.9.7-2) unstable; urgency=low
 
